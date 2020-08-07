@@ -16,7 +16,7 @@ const RemotePushController = () => {
         // process the notification here
       },
       // Android only: GCM or FCM Sender ID
-      senderID: '893491054427',
+    //   senderID: '893491054427',  // this is used for remote notification
       popInitialNotification: true,
       requestPermissions: true
     })
