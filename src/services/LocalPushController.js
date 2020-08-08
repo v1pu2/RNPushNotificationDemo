@@ -1,14 +1,14 @@
-import PushNotification from 'react-native-push-notification'
+import PushNotification from 'react-native-push-notification';
 
 PushNotification.configure({
   // (required) Called when a remote or local notification is opened or received
-  onNotification: function(notification) {
-    console.log('LOCAL NOTIFICATION ==>', notification)
+  onNotification: function (notification) {
+    console.log('LOCAL NOTIFICATION ==>*********', notification);
   },
 
   popInitialNotification: true,
-  requestPermissions: true
-})
+  requestPermissions: true,
+});
 
 export const LocalNotification = () => {
   PushNotification.localNotification({
@@ -22,9 +22,9 @@ export const LocalNotification = () => {
     vibration: 300,
     playSound: true,
     soundName: 'default',
-    actions: '["Yes", "No"]'
-  })
-}
+    actions: '["Yes", "No"]',
+  });
+};
 
 export const ScheduledLocalNotification = () => {
   PushNotification.localNotificationSchedule({
@@ -39,6 +39,6 @@ export const ScheduledLocalNotification = () => {
     playSound: true,
     soundName: 'default',
     actions: '["Yes", "No"]',
-    date: new Date(Date.now() + 3 * 1000) // in 3 secs
-  })
-}
+    date: new Date(Date.now() + 3 * 1000), // in 3 secs
+  });
+};
