@@ -21,7 +21,7 @@ export const LocalNotification = () => {
     vibrate: true,
     vibration: 300,
     playSound: true,
-    soundName: 'default',
+    soundName: 'store_door_chime_mike_koenig_570742973',
     actions: '["Yes", "No"]'
   })
 }
